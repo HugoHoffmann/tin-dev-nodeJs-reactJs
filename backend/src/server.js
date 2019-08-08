@@ -1,13 +1,18 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
+const mongoose = require('mongoose');
+
 const routes = require('./routes');
+
 const server = express();
 
-mongoose.connect('mongodb+srv://hugo:hugoho123@cluster0-df8xh.mongodb.net/admin?retryWrites=true&w=majorityy', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://hugo:hugoho123@cluster0-df8xh.mongodb.net/test?retryWrites=true&w=majority', {
+    useNewUrlParser: true
+});
 
 server.use(cors());
-server.use(express.json)
+server.use(express.json());
 server.use(routes);
+
 
 server.listen(3333);
