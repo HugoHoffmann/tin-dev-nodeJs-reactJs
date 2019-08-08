@@ -16,7 +16,7 @@ module.exports = {
             ]
         });
 
-        return res.json({ 'teste': true });
+        return res.json(users);
     },
 
     async store(req, res) {
