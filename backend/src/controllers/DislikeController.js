@@ -15,4 +15,3 @@ module.exports = {
         return res.json(loggedDev);
     }
 };
-// https://rocketseat.com.br/week-8/aulas#day-07 57
