@@ -29,7 +29,7 @@ export const Container = styled.main`
         max-height: 300px;
         border-radius: 4px 4px 0 0;
         overflow: hidden;
-        background: #44475a;
+        background: #252525;
 
         img {
           max-width: 100%;
@@ -39,8 +39,8 @@ export const Container = styled.main`
 
       section {
         flex: 1;
-        background: #44475a;
-        border: 1px solid #44475a;
+        background: #5d5959;
+        border: 1px solid #5d5959;
         padding: 15px 20px;
         text-align: left;
         border-radius: 0 0 4px 4px;
@@ -68,7 +68,7 @@ export const Container = styled.main`
           height: 50px;
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
           border-radius: 4px;
-          background: #44475a;
+          background: #44475a1c;
           transition: all 150ms ease-in-out;
 
           &:hover {
