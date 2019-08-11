@@ -11,8 +11,9 @@ export default function Login({ hitory }) {
             username,
         });
         
-        console.log(response);
-        hitory.push('/main');
+        const { _id } = response.data;
+
+        hitory.push(`/dev/${_id}`);
 
     }
     return (
